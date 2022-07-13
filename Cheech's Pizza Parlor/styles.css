@@ -1,0 +1,155 @@
+/*
+    Name: Cara Jones
+    Date: July 13, 2022
+    Assignment: Cheech's Pizza Parlor
+    File: styles.css
+*/
+/*--------------------------------------- Base ---------------------------------*/
+html{
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: sans-serif;
+}
+body{
+  background-color: #ffffe6;
+  border: 4px red solid;
+  border-radius: 5%;
+  margin: 10px 125px 10px 125px;
+  border-radius: 3%;
+  padding: 10px 5px 10px 5px;
+}
+/*--------------------------------------- Header ---------------------------------*/
+header {
+  margin: 8px 15px 8px 15px;
+  padding: 2%;
+}
+header img{
+  width: 100%;
+  height: 30%;
+  border: 2.5px white solid;
+}
+/*----------------------------------- Navigation ---------------------------------*/
+nav{
+  margin-left: 18%;
+}
+nav ul{
+  display: flex;
+  width: 100%;
+  margin-left: -15%;
+}
+nav ul li{
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: red;
+  color: black;
+  font-size: 1.2em;
+  padding: 10px 5px 10px 5px;
+  width: 20%;
+
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+nav ul li:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+}
+/*--------------------------------------- Body ---------------------------------*/
+h1{
+  font-size: 4em;
+  line-height: .5;
+  font-weight: bold;
+  font-family: 'Arial Black';
+  text-shadow: 2px 2px red;
+}
+.menuContainer{
+  margin-left: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pizza{
+  width: 30%;
+  justify-content: space-around;
+  margin:5px;
+}
+h3{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+div img{
+  padding:5px;
+  width: 100%;
+  border-radius: 75%;
+}
+/*--------------------------- Order-Columns ------------------------------------*/
+.col1{
+  margin: auto;
+  width: 20%;
+  padding: 25px;
+
+}
+label{
+  padding: 10px;
+}
+
+
+/*--------------------------- Order Form ---------------------------------------*/
+
+
+/*--------------------------- Footer -------------------------------------------*/
+footer{
+  position: sticky;
+  bottom: 0px;
+  background-color: red;
+  color: white;
+  padding: 2px;
+}
+
+/*---------------------- Responsive Design -------------------------------------*/
+@media screen and (max-width: 880px){
+  body{
+    margin: 10px 50px 10px 50px;
+  }
+  h1{color: red;}
+  nav{
+    margin-left: 15%;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+  }
+  h1{
+    font-size: 3.5em;
+  }
+  nav ul li{
+    padding-right: 40%;
+    padding-left: 40%;
+  }
+  .pizza{
+    width: 40%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 568px){
+  nav{
+    margin-left: 5%;
+  }
+
+  .menuContainer{
+    margin-left: 0px;
+  }
+  .pizza{
+    width: 85%;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+}
