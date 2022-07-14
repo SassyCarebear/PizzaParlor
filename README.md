@@ -1,3 +1,3 @@
-## PizzaParlor
-# Cara Jones
-# July 2022
+# PizzaParlor
+## Cara Jones
+### July 2022
