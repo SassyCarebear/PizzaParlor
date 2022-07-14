@@ -27,32 +27,61 @@
         </ul>
       </nav>
     </header>
+
      <h1>Order Now!</h1>
-     <div class="col1">
-       <form>
-         <fieldset>
-            <legend>
-              Contact Information
-            </legend>
-              <label for="fname">
-                  First Name:
-                  <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
-              </label>
-              <label for="lname">
-                  Last Name:
-                  <input type="text" name="lname" id="lname" required placeholder="Last Name"/>
-              </label>
-              <label for="tel">
-                  Phone Number:
-                  <input type="tel" name="tel" id="tel" required placeholder="Phone Number"/>
-              </label>
-          </fieldset>
-       </form>
-     </div>
+     <div class="colContainer">
+       <div class="col1">
+         <form>
+           <fieldset>
+              <legend>
+                Order Form
+              </legend>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name"/>
+                </label>
+                <label for="tel">
+                    Phone Number:
+                    <input type="tel" name="tel" id="tel" required placeholder="Phone Number"/>
+                </label>
+                <label for="pizzas">Pizza:
+                  <select name="pizzas" id="pizzas">
+                    <option value="Pepperoni">Pepperoni</option>
+                    <option value="Special Pepperoni">Special Pepperoni</option>
+                    <option value="Buffalo Chicken">Buffalo Chicken</option>
+                    <option value="BBQ Pulled Pork">BBQ Pulled Pork</option>
+                    <option value="White Pizza">White Pizza</option>
+                    <option value="Breakfast Pizza">Breakfast</option>
+                  </select>
+                </label>
 
-     <div class="col2">
+            <label for="numPizzas">How Many:
+              <input type="number" id="numPizzas" name="numPizzas" min="1" max="20"
+              ></label>
+              <input type="submit" name="submit" id="submit">
+            </fieldset>
 
-     </div>
+         </form>
+       </div>
+
+       <div class="col2">
+         <section class="reviews">
+           <h3>Reviews</h3>
+           <p>The white pizza is my favorite!</p> <p id="revName">-Jason </p>
+           <p>So good I might move here, just for your pizza!</p> <p id="revName2">-Anna</p>
+         </section>
+        <section class="social">
+          <h3>Check us out on social media</h3>
+          <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt=""></a>
+          <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt=""></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt=""></a>
+        </section>
+       </div>
+      </div>
     <footer>
       Cheech's Pizza Parlor  &#x1F355; Chicago, Illinos
     </footer>
